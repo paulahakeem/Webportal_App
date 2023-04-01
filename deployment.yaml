@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: webportal
-          image: paulahakeem/webportal:v1
+          image: paulahakeem/webportal:v2
           ports:
-            - containerPort: 5000
+            - containerPort: 8000
               protocol: TCP
