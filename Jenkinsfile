@@ -17,7 +17,7 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
                 sh """
-                kubectl apply -f /var/jenkins_home/workspace/webportal/deploy1.yaml
+                kubectl apply -f /var/jenkins_home/workspace/webportal/deployment.yaml
                 kubectl apply -f /var/jenkins_home/workspace/webportal/lb.yaml
                 """
                 }
