@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<!--
+Template Name: Algenius
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html lang="">
+<head>
+<title>Mathletes</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="icon" type="image/x-icon" href="static/images/demo/favicon.ico">
+<link href="static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/layout/styles/searchlayout.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/layout/styles/timetable.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/layout/styles/semmaterials.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/layout/styles/materialupload.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/layout/styles/login.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body id="top">
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '132655803959344',
+      autoLogAppEvents : true,
+      xfbml            : false,
+      version          : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div id="logindiv" class="wrapper row10">
+  <form id="loginform">
+    <img src="static/images/closebutton/closebutton2.png" id="closelogin"/><br/>
+    <input type="text" name="rollno" placeholder="Roll Number" id="rollno" required="required"/>
+    <br/>
+    <input type="password" name="password" placeholder="Password" id="password" required="required"/>
+    <br/>
+    <button id="loginbutton">Login</button>
+    <br/>
+  </form>
+</div>
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <div class="fl_left">
+      <ul>
+        <li><i class="fa fa-phone"></i> +2 128 332 3341</li>
+        <li><i class="fa fa-envelope-o"></i> FIXED_SOLUTIONS.COM</li>
+      </ul>
+    </div>
+    <div class="fl_right">
+      <ul>
+        <li><a href="#"><i class="fa fa-lg fa-home"></i></a></li>
+        <li><a id="loginlink">Login</a></li>
+        <li><a href="/signup">Register</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <div id="logo" class="fl_left">
+      <h1><a href="#">Mathletes</a></h1>
+    </div>
+    <div id="quickinfo" class="fl_right">
+      <ul class="nospace inline">
+        <!--<li><strong>Jindal:</strong><br>
+          +91 (123) 456 7890</li>
+        <li><strong>Nitin:</strong><br>
+          +91 (123) 456 7890</li>-->
+      </ul>
+    </div>
+  </header>
+</div>
+<div class="wrapper row2">
+  <nav id="mainav" class="hoc clear"> 
+    <ul class="clear">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a class="drop" href="#">About Us</a>
+        <ul>
+          <li><a href="templates/pages/gallery.html">Vision</a></li>
+          <li><a href="templates/pages/full-width.html">Gallery</a></li>
+          <li><a href="templates/pages/sidebar-left.html">Past Events</a></li>
+          <li><a href="templates/pages/sidebar-right.html">Team</a></li>
+          <li><a href="templates/pages/basic-grid.html">Upcoming Events</a></li>
+        </ul>
+      </li>
+      <li><a class="drop" href="#">Academics</a>
+        <ul>
+          <li><a href="#">Curriculum</a></li>
+          <li><a class="drop" href="#">Materials</a>
+            <ul>
+              <li><a href="#">3<sup>rd</sup> Semester</a></li>
+              <li><a href="#">4<sup>th</sup> Semester</a></li>
+              <li><a href="#">5<sup>th</sup> Semester</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Additionals</a></li>
+          <li><a href="#" class="drop">Timetable</a>
+            <ul>
+              <li><a href="#" class="yeartable">2<sup>nd</sup> Year</a></li>
+              <li><a href="#" class="yeartable">3<sup>rd</sup> Year</a></li>
+              <li><a href="#" class="yeartable">4<sup>th</sup> Year</a></li>
+              <li><a href="#" class="yeartable">5<sup>th</sup> Year</a></li>
+            </ul>
+          </li>
+          <li><a href="http://iitkgp.ac.in/files/acad_cal1718.pdf" target="_blank">Academic Calender</a></li>
+          <li><a href="/announcements">Announcements</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Non-Academics</a></li>
+      <li><a href="#">Placements</a></li>
+      <li><a href="#">Fundae</a></li>
+      <li><a href="/signup">Join Us</a></li>
+      <li><input type="text" placeholder="Search the website" id="searchbar"/></li>
+    </ul>
+  </nav>
+</div>
+<div class="searchdisplay wrapper row6" id="searchdiv">
+	No search results found for your query.
+</div>
+<div class="timetable wrapper row7" id="timediv">
+</div>
+<div class="wrapper bgded overlay" style="background-image:url('static/images/demo/backgrounds/mathematics.jpg');">
+  <article id="pageintro" class="hoc clear"> 
+    <h3 class="heading">Department of Mathematics, <br>IIT Kharagpur</h3>
+    <p>A web portal for all the mathletes out there!</p>
+    <!--<footer><a class="btn" href="#">Peek</a></footer>-->
+  </article>
+</div>
+<div class="materialselect wrapper row 8">
+  <img id="closematerialselect" src="static/images/closebutton/closebutton.png" />
+  <br/>
+  <div class="level1">
+    <button>1<sup>st</sup> Semester</button>
+    <button>2<sup>nd</sup> Semester</button>
+    <button>3<sup>rd</sup> Semester</button>
+    <button>4<sup>th</sup> Semester</button>
+    <button>5<sup>th</sup> Semester</button>
+    <button>6<sup>th</sup> Semester</button>
+    <button>7<sup>th</sup> Semester</button>
+    <button>8<sup>th</sup> Semester</button>
+    <button>9<sup>th</sup> Semester</button>
+    <button>10<sup>th</sup> Semester</button>
+  </div>
+  <br/>
+  <div class="level2">
+    <button>Subject 1</button>
+    <button>Subject 2</button>
+    <button>Subject 3</button>
+    <button>Subject 4</button>
+    <button>Subject 5</button>
+  </div>
+  <br/>
+  <div class="level3">
+    <button>Assignments</button>
+    <button>Books</button>
+    <button>Notes</button>
+    <button>Question Papers</button>
+  </div>
+</div>
+<div class="materialupload wrapper row9">
+  <img id="closematerialupload" src="static/images/closebutton/closebutton.png" />
+  <br/>
+  <input type="text" name="uploadername" placeholder="Uploader Name" required="required" id="uploadername"/>
+  <input type="url" name="materiallink" placeholder="Material Link (Either a link or a file must be uploaded)"  id="materiallink"/>
+  <input type="file" name="materialfile" placeholder="Material File" id="materialfile" />
+  <textarea placeholder="Description (Optional)" id="materialdescription" rows="3"></textarea>
+  <button id="materialuploadbutton">Upload</button>
+</div>
+<div class="wrapper row3 hide">
+  <main class="hoc container clear"> 
+    <!-- main body --> 
+    <ul class="nospace group">
+      <li class="one_third first">
+        <article><i class="btmspace-30 fa fa-3x fa-american-sign-language-interpreting"></i>
+          <h6 class="heading font-x1">Semester-wise materials</h6>
+          <p class="btmspace-30">Have a quick access to course materials here.</p>
+          <footer><a class="btn semmaterials">Download &rsaquo;</a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><i class="btmspace-30 fa fa-3x fa-resistance"></i>
+          <h6 class="heading font-x1">Random fundae</h6>
+          <p class="btmspace-30">Get all sorts of academic and non academic fundae from our seniors! [&hellip;]</p>
+          <footer><a class="btn" href="#">Read More &rsaquo;</a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><i class="btmspace-30 fa fa-3x fa-expeditedssl"></i>
+          <h6 class="heading font-x1">Batch Upload</h6>
+          <p class="btmspace-30">Upload Materials for your batch-mates to help them ease out their study.</p>
+          <footer><a class="btn semupload">&nbsp;&nbsp;&nbsp;Upload &rsaquo;&nbsp;&nbsp;&nbsp;</a></footer>
+        </article>
+      </li>
+    </ul>
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<div class="wrapper bgded overlay" style="background-image:url('static/images/demo/backgrounds/02.png');">
+  <section class="hoc container clear"> 
+    <div class="sectiontitle">
+      <h6 class="heading">Non aliquet mauris</h6>
+    </div>
+    <div class="group">
+      <div class="one_half first">
+        <p><strong>Non imperdiet mi praesent lectus</strong></p>
+        <p>Ex iaculis at odio eu facilisis venenatis lectus proin et malesuada turpis eu blandit quam mauris eu nibh et nibh rhoncus sollicitudin non non orci nulla laoreet neque neque maecenas tempor ipsum et mauris fermentum auctor.</p>
+        <p class="btmspace-30">Sed dictum blandit rutrum donec venenatis tincidunt sollicitudin quisque quis diam sit amet metus pharetra [&hellip;]</p>
+        <footer><a class="btn" href="#">Read More &raquo;</a></footer>
+      </div>
+      <div class="one_half">
+        <p><strong>Fusce porta enim id pharetra gravida</strong></p>
+        <a href="#"><img src="static/images/demo/480x186-vid.png" alt=""></a>
+        <p>Commodo donec iaculis dolor sed lobortis fermentum.</p>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="wrapper row3">
+  <section class="hoc container clear"> 
+    <div class="sectiontitle">
+      <h6 class="heading">Velit fringilla tincidunt</h6>
+    </div>
+    <div class="group testimonials">
+      <article class="one_half first"><img src="static/images/demo/100x100.png" alt="">
+        <blockquote>Lectus quam posuere elit quis risus sem vitae augue morbi rhoncus accumsan porttitor nullam et blandit est ac maximus elit praesent ornare dapibus nibh sed condimentum.</blockquote>
+        <h6 class="heading">A. Name</h6>
+        <em>Fringilla tortor tempor</em></article>
+      <article class="one_half"><img src="static/images/demo/100x100.png" alt="">
+        <blockquote>Mattis sem enim hendrerit enim sed egestas odio risus pretium orci nullam sodales ornare turpis ut vestibulum felis pharetra ultrices maecenas aliquam tortor tortor non.</blockquote>
+        <h6 class="heading">B. Name</h6>
+        <em>Vel etiam augue mi dictum</em></article>
+    </div>
+  </section>
+</div>
+<div class="wrapper bgded overlay" style="background-image:url('static/images/demo/backgrounds/03.png');">
+  <section class="hoc container clear"> 
+    <div class="sectiontitle">
+      <h6 class="heading">With love from Mathletes2k15</h6>
+    </div>
+    <div class="group team">
+      <figure class="one_quarter first"><a href="#"><img src="static/images/demo/320x320.png" alt=""></a>
+        <figcaption>
+          <h6 class="heading">C. Name</h6>
+          <em>Sed placerat turpis</em>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+      <figure class="one_quarter"><a href="#"><img src="static/images/demo/320x320.png" alt=""></a>
+        <figcaption>
+          <h6 class="heading">D. Name</h6>
+          <em>Faucibus condimentum</em>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+      <figure class="one_quarter"><a href="#"><img src="static/images/demo/320x320.png" alt=""></a>
+        <figcaption>
+          <h6 class="heading">E. Name</h6>
+          <em>Justo tempus purus</em>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+      <figure class="one_quarter"><a href="#"><img src="static/images/demo/320x320.png" alt=""></a>
+        <figcaption>
+          <h6 class="heading">F. Name</h6>
+          <em>Consequat ex arcu</em>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="clear"></div>
+  </section>
+</div>
+<div class="wrapper row3">
+  <figure class="hoc clear"> 
+    <ul class="nospace group logos">
+      <li class="one_quarter first"><a href="#"><img src="static/images/demo/222x100.png" alt=""></a></li>
+      <li class="one_quarter"><a href="#"><img src="static/images/demo/222x100.png" alt=""></a></li>
+      <li class="one_quarter"><a href="#"><img src="static/images/demo/222x100.png" alt=""></a></li>
+      <li class="one_quarter"><a href="#"><img src="static/images/demo/222x100.png" alt=""></a></li>
+    </ul>
+  </figure>
+</div>
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <div class="one_quarter first">
+      <h6 class="heading">Venenatis iaculis</h6>
+      <p>Consequat lectus in tristique nisl nullam eleifend leo nunc non posuere nisi vehicula eget.</p>
+      <p>Sed placerat aliquet ligula cras tortor nisl semper et feugiat rhoncus pretium nec est morbi id odio sollicitudin.</p>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Nullam sit amet</h6>
+      <nav>
+        <ul class="nospace">
+          <li><a href="index.html"><i class="fa fa-lg fa-home"></i></a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Disclaimer</a></li>
+        </ul>
+      </nav>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="https://www.facebook.com/MathematicsColloquium/"><i class="fa fa-facebook" target="_blank"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Tincidunt velit</h6>
+      <article>
+        <h2 class="nospace font-x1"><a href="#">Vestibulum orci nisi</a></h2>
+        <time class="font-xs" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
+        <p>Vestibulum turpis vel scelerisque sem duis justo enim condimentum iaculis urna bibendum imperdiet convallis quisque elementum [&hellip;]</p>
+      </article>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Enim diam praesent</h6>
+      <ul class="nospace linklist">
+        <li><a href="#">Ante magna congue vel justo</a></li>
+        <li><a href="#">Egestas est aliquam sed</a></li>
+        <li><a href="#">Ex condimentum interdum</a></li>
+        <li><a href="#">Faucibus velit consequat</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <p class="fl_left">Copyright &copy; 2017 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </div>
+</div> 
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a> 
+<!-- JAVASCRIPTS --> 
+<script src="static/layout/scripts/jquery.min.js"></script>
+<script src="static/layout/scripts/jquery.backtotop.js"></script>
+<script src="static/layout/scripts/jquery.mobilemenu.js"></script>
+<script src="static/layout/scripts/search.js"></script>
+<script src="static/layout/scripts/timetable.js"></script>
+<script src="static/layout/scripts/semmaterials.js"></script>
+<script src="static/layout/scripts/materialupload.js"></script>
+<script src="static/layout/scripts/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webportal
+  namespace: webportal
+  labels:
+    app: webportal
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webportal
+  template:
+    metadata:
+      labels:
+        app: webportal
+    spec:
+      containers:
+        - name: webportal
+          image: paulahakeem/webportal:v1
+          ports:
+            - containerPort: 5000
+              protocol: TCP
